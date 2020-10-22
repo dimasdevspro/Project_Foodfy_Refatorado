@@ -15,24 +15,16 @@
       <div class="menu_links">
         <header>
           <a href="/">Home</a>
-          <a href="/revenue.html">Receitas</a>
-          <a href="/about.html">Sobre</a>
+          <a href="/revenues">Receitas</a>
+          <a href="/about">Sobre</a>
         </header>
       </div>
     </div>
-    <div class="not-found">
-      <p id="status">404</p>
-      <p id="warning">
-        :( Poxa que chato... mas esta página não existe em nossos servidores. :)
-        Ficaríamos muito felizes se você enviar um feedback, clicando<a
-          href="mailto:dimasdevspro@gmail.com"
-        >
-          aqui.</a
-        >
-      </p>
-    </div>
+
+    {% block content %}
+
+    {% endblock %}
+
     <div class="footer">
       <p>Todos os direitos reservados, receitas Foodfy</p>
     </div>
-  </body>
-</html>

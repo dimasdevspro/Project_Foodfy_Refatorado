@@ -25,30 +25,35 @@
 }
 
 .not-found {
-  width: 500;
-  height: 200;
-  position: relative;
-  display: flex;
+  width: 600px;
+  height: 200px;
+  margin: 19vh auto;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
   justify-content: center;
-  margin: 5vh auto;
+  text-align: center;
 }
 
 #status {
-  width: 150px;
-  height: 100px;
-  position: absolute;
-  margin: 30px;
-  text-align: center;
-  font-size: 50px;
-  color: black;
+  font-size: 42px;
+  font-weight: 800;
 }
 
+#warning {
+  font-size: 22px;
+  font-weight: 200;
+}
+
+#feedback {
+  font-size: 18px;
+  font-weight: 600;
+}
 .rectangle {
   width: 940px;
   height: 366px;
   background-color: #fbdfdb;
   border-radius: 30px;
-  margin: 30px 230px 0 230px;
+  margin: 30px 230px 30px 230px;
   position: relative;
 }
 
@@ -78,18 +83,6 @@
   color: #000000;
   opacity: 0.7;
   font-size: 18px;
-  line-height: 28px;
-}
-
-.most_accessed {
-  width: 174px;
-  height: 28px;
-  position: relative;
-  margin: 50px 996px 20px 230px;
-  font-family: "Roboto-Bold";
-  font-weight: bold;
-  color: #111111;
-  font-size: 21px;
   line-height: 28px;
 }
 
@@ -132,9 +125,10 @@
 .footer {
   width: 1400px;
   height: 62px;
-  position: relative;
+  position: absolute;
   margin: 50px 0px 0px 0px;
   background-color: #eeeeee;
+
 }
 
 .footer p {
