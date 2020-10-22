@@ -1,6 +1,6 @@
 const express = require("express");
 const nunjucks = require("nunjucks");
-const revenues = require("./data");
+const revenuesData = require("./data");
 
 const server = express();
 
@@ -14,19 +14,30 @@ nunjucks.configure("views", {
 });
 
 server.get("/", function (req, res) {
-  return res.render("index", {items: revenues});
+  return res.render("index", {items: revenuesData});
 });
 
 server.get("/about", function (req, res) {
   return res.render("about");
 });
 
-server.get("/revenue", function(req, res){
-  return res.render("revenue", {items: revenues})
-});
+// server.get("/revenue/id", function(req, res){
+//   revenues = [];
+//   const revenueStringId = req.params.id;
+//   const revenueNumberId = parserInt(revenueStringId)
 
-server.get("/revenues", function (req, res) {
-  return res.render("revenues", {items: revenues});
+//   console.log(revenues[revenueNumberId]);
+// });
+
+server.get("/revenues/:index", function (req, res) {
+  const revenues = [...revenuesData];
+
+  const revenueIndex = req.params.index;
+
+  const revenue = revenues[revenueIndex]
+
+   console.log(revenue)
+  // return res.render("revenue", {item: revenue});
 });
 
 server.use(function (req, res) {

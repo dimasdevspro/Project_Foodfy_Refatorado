@@ -1,0 +1,31 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+    <section class="cards">
+
+      <div class="card" id="burger.png" >
+        <div class="img_revenue">
+          <img src="{{item.image}}" alt="" />
+        </div>
+        <div class="title_revenue">
+          <p>{{item.title}}</p>
+        </div>
+        <div class="author_revenue">
+          <p>{{item.author}}</p>
+        </div>
+        <div class="ingredients_revenue">
+            <p>{{item.ingredients}}</p>
+        </div>
+        <div class="preparation_revenue">
+            <p>{{item.preparation}}</p>
+        </div>
+        <div class="information_revenue">
+            <p>{{item.information}}</p>
+        </div>
+      </div>
+    
+    </section>
+
+    <script src="/scripts.js"></script>
+ 
+ {% endblock %}

@@ -5,7 +5,7 @@
 
       {% for item in items %}
 
-      <a href="/revenue" class="card" id="burger.png" target="_blank">
+      <div class="card_link" id="{{item.}}" target="_blank">
         <div class="img_revenue">
           <img src="{{item.image}}" alt="" />
         </div>
@@ -15,7 +15,8 @@
         <div class="author_revenue">
           <p>{{item.author}}</p>
         </div>
-      </a>
+
+      </div>
     
     {% endfor %}
     
