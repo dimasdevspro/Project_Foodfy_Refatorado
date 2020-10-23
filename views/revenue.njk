@@ -1,31 +1,45 @@
 {% extends "layout.njk" %}
 
 {% block content %}
-    <section class="cards">
 
-      <div class="card" id="burger.png" >
-        <div class="img_revenue">
-          <img src="{{item.image}}" alt="" />
-        </div>
-        <div class="title_revenue">
-          <p>{{item.title}}</p>
-        </div>
-        <div class="author_revenue">
-          <p>{{item.author}}</p>
-        </div>
-        <div class="ingredients_revenue">
-            <p>{{item.ingredients}}</p>
-        </div>
-        <div class="preparation_revenue">
-            <p>{{item.preparation}}</p>
-        </div>
-        <div class="information_revenue">
-            <p>{{item.information}}</p>
-        </div>
+  <div class="card_revenue">
+    <div class="img_revenue_id">
+      <img src="{{item.image}}" alt=""/>
+    </div>
+    <div class="title_revenue_id">
+      <p>{{item.title}}</p>
+    </div>
+    <div class="author_revenue_id">
+      <p>{{item.author}}</p>
+    </div>
+
+    <div class="topic-ingredients">
+      <div class="grid_revenue_id">
+        <p class="subtitles_revenue_id">Ingredientes
+        </p>
+        <p class="showorhide-revenue">Esconder</p>
       </div>
-    
-    </section>
+      <div class="ingredients">
+        <p>{{item.ingredients}}</p>
+      </div>
+    </div>
 
-    <script src="/scripts.js"></script>
- 
- {% endblock %}
+    <div class="grid_revenue_id">
+      <p class="subtitles_revenue_id">Modo de Preparo</p>
+      <span class="showorhide-preparation">Esconder</span>
+    </div>
+    <div class="preparation">
+      <p>{{item.preparation}}</p>
+    </div>
+    <div class="grid_revenue_id">
+      <p class="subtitles_revenue_id">Informações Adicionais</p>
+      <span class="showorhide-addinfos">Esconder</span>
+    </div>
+    <div class="information">
+      <p>{{item.information}}</p>
+    </div>
+  </div>
+
+  <script src="/scripts.js"></script>
+
+{% endblock %}

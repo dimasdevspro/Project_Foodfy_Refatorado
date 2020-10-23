@@ -21,13 +21,9 @@ server.get("/about", function (req, res) {
   return res.render("about");
 });
 
-// server.get("/revenue/id", function(req, res){
-//   revenues = [];
-//   const revenueStringId = req.params.id;
-//   const revenueNumberId = parserInt(revenueStringId)
-
-//   console.log(revenues[revenueNumberId]);
-// });
+server.get("/revenues", function(req, res){
+  return res.render("revenues", {items: revenuesData});
+});
 
 server.get("/revenues/:index", function (req, res) {
   const revenues = [...revenuesData];
@@ -36,8 +32,7 @@ server.get("/revenues/:index", function (req, res) {
 
   const revenue = revenues[revenueIndex]
 
-   console.log(revenue)
-  // return res.render("revenue", {item: revenue});
+  return res.render("revenue", {item: revenue});
 });
 
 server.use(function (req, res) {
