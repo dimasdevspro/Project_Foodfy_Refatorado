@@ -18,16 +18,16 @@
 
 ### Sobre
 
-<p align="center">Criação de um site com receitas, links, menu, modal das receitas e suas respectivas informações. Desafios propostos pela Rocketseat no Bootcamp Launchbase:</p>
+<p align="center">Refatoração do Site com Nunjucks e upgrade de estilos. Desafios propostos pela Rocketseat no Bootcamp Launchbase:</p>
 <ul >
- <li><a href="https://github.com/Rocketseat/bootcamp-launchbase-desafios-02/blob/master/desafios/02-foodfy.md" target="_blank">Desafio Foodfy;</a></li>
+ <li><a href="https://github.com/rocketseat-education/bootcamp-launchbase-desafios-03/blob/master/desafios/03-refatorando-foodfy.md" target="_blank">Desafio Foodfy;</a></li>
 </ul>
 <p>Detalhes do Projeto:</p>
 <ul>
- <li>Criação de arquivo html, menu e links;</li>
- <li>Estililzação - utilização de cores, proporções e funcionalidades (HTML e CSS), que permitem boas experiências para o usuário;</li>
- <li>Criação de Card (pop-up) linkados as receitas - Javascript - DOM;</li>
- <li>Ao clicar em uma das receitas, deve ser aberta uma modal onde um iframe irá carregar as informações da receita selecionada.</li>
+ <li>Criação de um Backend para o Front-end;</li>
+ <li>Dinamismo do site com template Nunjucks - upgrade;</li>
+ <li>Redirecionamento de Livro de Receitas para página individual para cada receita</li>
+ <li>Detalhamento em CSS para "Esconder" ou "Mostrar" informações contidas na página da receita.</li>
 </ul>
 
 
@@ -43,11 +43,12 @@
 - [x] Página com menu
 - [x] Página Sobre
 - [x] Página com receitas
+- [x] Página de cada receita
 
 
 ### Demonstração da Aplicação
 
-<h1 align="center"><img src="screenshots/screenshot_app_foodfy.gif" height="350" weigth="350"></h1>
+<h1 align="center"><img src="screenshots/FoodFyrefatorado.gif" height="350" weigth="350"></h1>
 
 Ou acesse a aplicação na <a href="https://dimasdevspro.github.io/Projeto%202%20-%20Foodfy/index.html" target="_blank">rede</a>
 
@@ -60,7 +61,7 @@ Para começar, você vai precisar instalar em sua máquina as seguintes ferramen
 
 - Um editor de código [VSCode](https://code.visualstudio.com/);
 
-- E um servidor de Testes do VSCode [LiveServer](https://ritwickdey.github.io/vscode-live-server/);
+- O motor V8 Javascript do Chrome, versão LTS [NodeJS](https://nodejs.org/en/download/); );
 
 
 ### Testes
@@ -75,34 +76,55 @@ $ <https://code.visualstudio.com/>
 # Acesse o terminal/cmd de sua plataforma (Win, Linux, etc)
 
 # Clone este repositório com o seguinte comando abaixo
-$ git clone <https://github.com/dimasdevspro/Site_Foodfy>
+$ git clone <https://github.com/dimasdevspro/Project_Foodfy_Refatorado>
 
 # Ainda no terminal, acesse a pasta com mais um comando
-$ cd Site_Foodfy
+$ cd Project_Foodfy_Refatorado
 
 # Agora digite este comando, para editar/testas o projeto
 $ code .
 
-# No menu lateral do VSCode, acesse "Extensions"
-
-# Digite na busca "Live Server e clique em install
-
-# No menu lateral do VSCode, acesse "Explorer"
-
-# Escolha o arquivo "...index.html" e clique com o botão
-# direito do mouse e escolha a opção "Open Live Server"
-# ou execute o comando no teclado
-$ Alt+L Alt+O
-
 ```
 
+
+### Instalação de Dependências
+
+Instalação de Dependências "Express", "Nodemon" e "Nunjucks" para rodar aplicação.
+
+```bash
+# Abra o terminal do VSCode na Aba "Terminal"
+$ "New Terminal"
+
+# Certifique-se que o terminal está com o caminho de sua pasta, i.e
+$ /Project_Foodfy_Refatorado/
+
+# Digite o comando no terminal para instalar o Express
+$ npm install express
+
+# Digite o comando no terminal para instalar o "Nodemon"
+$ npm install -D nodemon
+
+# No arquivo "package.json", localize e modifique a linha "start": node server.js para:
+$ "start": nodemon server.js
+
+# Digite o comando abaixo para instalar o "Nunjucks"
+$ npm install nunjucks
+
+# Digite no terminal o seguinte comando para rodar o servidor
+$ npm start
+
+# Para rodar a aplicação no browser, digite
+$ http://localhost:3333/
+
+```
 
 ### Tecnologias utilizadas
 
 As seguintes ferramentas foram usadas na construção do projeto:
 
-- [VSCode](https://code.visualstudio.com/)
-- [Git](https://git-scm.com)
+- [VSCode](https://code.visualstudio.com/);
+- [Git](https://git-scm.com);
+- [NodeJS](https://nodejs.org/en/download/).
 
 
 ### Autor
