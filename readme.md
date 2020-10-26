@@ -4,7 +4,6 @@
 
 ### Indice
 <!--ts-->
-* [Indice](#indice)
 * [Sobre](#sobre)
 * [Status do Projeto](#status-do-projeto)
 * [Features](#features)
@@ -16,7 +15,7 @@
 * [Licença](#licença)
 <!--te-->
 
-### Sobre
+### Sobre [↩](#indice)
 
 <p align="center">Refatoração do Site com Nunjucks e upgrade de estilos. Desafios propostos pela Rocketseat no Bootcamp Launchbase:</p>
 <ul >
@@ -31,29 +30,26 @@
 </ul>
 
 
-### Status do Projeto
+### Status do Projeto [↩](#indice)
 
 <h4> 
 	👌 Concluído 👌
 </h4>
 
 
-### Features
-
+### Features [↩](#indice)
 - [x] Página com menu
 - [x] Página Sobre
 - [x] Página com receitas
 - [x] Página de cada receita
 
 
-### Demonstração da Aplicação
+### Demonstração da Aplicação [↩](#indice)
 
 <h1 align="center"><img src="screenshots/FoodFyrefatorado.gif" height="350" weigth="350"></h1>
 
-Ou acesse a aplicação na <a href="https://dimasdevspro.github.io/Projeto%202%20-%20Foodfy/index.html" target="_blank">rede</a>
 
-
-### Pré-requisitos
+### Pré-requisitos [↩](#indice)
 
 Para começar, você vai precisar instalar em sua máquina as seguintes ferramentas:
 
@@ -64,7 +60,7 @@ Para começar, você vai precisar instalar em sua máquina as seguintes ferramen
 - O motor V8 Javascript do Chrome, versão LTS [NodeJS](https://nodejs.org/en/download/); );
 
 
-### Testes
+### Testes [↩](#indice)
 
 
 ```bash
@@ -87,7 +83,7 @@ $ code .
 ```
 
 
-### Instalação de Dependências
+### Instalação de Dependências [↩](#indice)
 
 Instalação de Dependências "Express", "Nodemon" e "Nunjucks" para rodar aplicação.
 
@@ -118,7 +114,7 @@ $ http://localhost:3333/
 
 ```
 
-### Tecnologias utilizadas
+### Tecnologias utilizadas [↩](#indice)
 
 As seguintes ferramentas foram usadas na construção do projeto:
 
@@ -127,7 +123,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [NodeJS](https://nodejs.org/en/download/).
 
 
-### Autor
+### Autor [↩](#indice)
 
 ---
 
@@ -143,6 +139,6 @@ Feito com ❤️ por Dimas 👋🏽 Entre em contato!
 [![Gmail Badge](https://img.shields.io/badge/-dimasdevspro@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:dimasdevspro@gmail.com)](mailto:dimasdevspro@gmail.com)
 
 
-### Licença
+### Licença [↩](#indice)
 
 <img alt="APM" src="https://img.shields.io/apm/l/vim-mode">
