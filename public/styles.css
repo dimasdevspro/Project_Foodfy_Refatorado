@@ -136,8 +136,8 @@
 .card_revenue {
   position: relative;
     display: grid;
-    grid-template-rows: repeat(8, 0.1fr);
-}
+    grid-template-rows: repeat(9, 0.1fr);
+    }
 
 .img_revenue_id {
   width: 940px;
@@ -153,7 +153,7 @@
 } 
 
 .title_revenue_id p {
-  width: 318px;
+  width: 510px;
   height: 42px;
   margin: 50px 541px 4px;
   font-size: 36px;
@@ -162,7 +162,7 @@
 }
 
 .author_revenue_id p {
-  width: 147px;
+  width: 180px;
   height: 24px;
   margin: 0 626px 50px 627px;
   font-size: 20px;
@@ -180,9 +180,7 @@
     font-weight: bold;
 }
 
-.showorhide-revenue,
-.showorhide-preparation,
-.showorhide-addinfos {
+h4 {
   width: 61px;
   height: 14px;
   margin: 0 965px 20px 8px;
@@ -194,11 +192,13 @@
 .ingredients,
 .preparation,
 .information {
+  width: 940px;
   margin: 0 230px 39px;
   font-size: 18px;
-color: #444444;
-line-height: 28px;
-text-align: justify;
+  color: #444444;
+  line-height: 28px;
+  text-align: justify;
+    
 }
 .ingredients_revenue_id p {
   width: 940px;
@@ -224,7 +224,6 @@ text-align: justify;
   position: absolute;
   margin: 50px 0px 0px 0px;
   background-color: #eeeeee;
-
 }
 
 .footer p {
